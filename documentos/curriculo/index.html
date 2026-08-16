@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Currículo executivo de Mircéa Kellen C. Mota, liderança em Processos, Governança de Serviços de TI, Product Owner e Transformação Digital.">
+<meta name="theme-color" content="#14213d">
+<title>Mircéa Kellen | Currículo Executivo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14213d;--navy2:#1f335d;--gold:#c58b49;--green:#28756f;--ink:#202938;--muted:#657184;--paper:#f7f7f5;--card:#fff;--line:#e3e6ea;--soft:#eef2f6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:13px/1.55 "DM Sans",Arial,sans-serif}
+a{color:inherit}
+.wrap{width:min(1040px,calc(100% - 32px));margin:auto}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.nav{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font:700 1.02rem "Playfair Display",serif;text-decoration:none;color:var(--navy)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;font:600 .78rem "DM Sans",sans-serif;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 16px;color:var(--navy);background:#fff;cursor:pointer}
+.nav-btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.nav-btn:hover{border-color:var(--gold)}
+.nav-btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* contact bar, part of the sticky white header */
+.top-contact{border-top:1px solid var(--line);background:#fff}
+.top-contact .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:7px 24px;padding:9px 0}
+.top-contact a,.top-contact span{display:inline-flex;align-items:center;gap:6px;font:600 .76rem "DM Sans",sans-serif;text-decoration:none;color:var(--muted);white-space:nowrap}
+.top-contact a:hover{color:var(--navy)}
+.top-contact svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* identity header */
+.cv-id{background:linear-gradient(128deg,#101c35 0%,#1c3159 65%,#246762 150%);color:#fff;padding:30px 0 28px}
+.cv-id h1{margin:0;font:700 clamp(1.8rem,3.4vw,2.5rem) "Playfair Display",serif;letter-spacing:-.01em}
+.cv-id .cv-role{margin:6px 0 10px;font:600 .98rem "DM Sans",sans-serif;color:#f1c691}
+.cv-id .cv-tagline{margin:0;max-width:640px;color:#d4deef;font-size:.85rem;line-height:1.55}
+
+/* differentiators strip */
+.diff{background:#fff;border-bottom:1px solid var(--line)}
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.diff-item{padding:18px 22px;border-left:1px solid var(--line)}
+.diff-item:first-child{border-left:0}
+.diff-item strong{display:block;font:700 .78rem "DM Sans",sans-serif;color:var(--navy);margin-bottom:4px}
+.diff-item span{display:block;font-size:.76rem;color:var(--muted);line-height:1.45}
+
+/* layout */
+.cv-body{display:grid;grid-template-columns:1fr 270px;gap:32px;padding:26px 0 46px;align-items:start}
+.cv-main section,.cv-side section{margin-bottom:24px}
+.cv-main section:last-child,.cv-side section:last-child{margin-bottom:0}
+.sec-title{font:800 .7rem "DM Sans",sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin:0 0 12px;padding-bottom:6px;border-bottom:2px solid var(--soft)}
+
+.cv-summary{margin:0;color:var(--ink);line-height:1.65;font-size:.85rem}
+
+/* experience */
+.cv-job{margin-bottom:20px;break-inside:avoid;page-break-inside:avoid}
+.cv-job:last-child{margin-bottom:0}
+.cv-job-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
+.cv-job h3{margin:0;font:700 .94rem "Playfair Display",serif;color:var(--navy)}
+.cv-job .cv-company{font:600 .78rem "DM Sans",sans-serif;color:var(--green);margin-top:2px}
+.cv-job .cv-period{white-space:nowrap;font:600 .73rem "DM Sans",sans-serif;color:var(--muted)}
+.cv-job ul{margin:9px 0 0;padding-left:16px;color:#3d4657}
+.cv-job li{margin:0 0 5px;font-size:.79rem;line-height:1.5}
+.cv-job li:last-child{margin-bottom:0}
+.cv-job li::marker{color:var(--gold)}
+
+.cv-early{margin-top:6px;padding:14px 16px;background:var(--soft);border-radius:12px}
+.cv-early p{margin:0 0 8px;font-size:.76rem;color:var(--muted)}
+.cv-early-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6px 0;border-top:1px solid #e2e7ec}
+.cv-early-row:first-of-type{border-top:0}
+.cv-early-row strong{font:700 .78rem "DM Sans",sans-serif;color:var(--navy)}
+.cv-early-row span.co{display:block;font-size:.7rem;color:var(--green);margin-top:1px}
+.cv-early-row .cv-period{font-size:.7rem;white-space:nowrap;color:var(--muted)}
+
+/* sidebar */
+.cv-side .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.skill-group{margin-bottom:14px}
+.skill-group:last-child{margin-bottom:0}
+.skill-group h4{margin:0 0 4px;font:700 .78rem "DM Sans",sans-serif;color:var(--navy)}
+.skill-group p{margin:0;font-size:.74rem;color:var(--muted);line-height:1.5}
+.tools-line{margin-top:2px;font-size:.72rem;color:var(--muted);line-height:1.6}
+
+.cv-clean{list-style:none;margin:0;padding:0}
+.cv-clean li{padding:8px 0;border-bottom:1px solid var(--soft)}
+.cv-clean li:last-child{border:0;padding-bottom:0}
+.cv-clean strong{display:block;font-size:.8rem;color:var(--navy)}
+.cv-clean span{display:block;font-size:.72rem;color:var(--muted);margin-top:2px}
+
+.footer-note{padding:18px 0 40px;text-align:center;font-size:.7rem;color:var(--muted)}
+
+@media(max-width:860px){
+  .cv-body{grid-template-columns:1fr}
+  .diff-grid{grid-template-columns:1fr}
+  .diff-item{border-left:0;border-top:1px solid var(--line)}
+  .diff-item:first-child{border-top:0}
+  .nav-btn span.btn-label{display:none}
+}
+@media(max-width:520px){
+  .top-contact .wrap{gap:5px 14px}
+}
+
+/* print */
+@media print{
+  .nav{display:none}
+  .top-contact{border-top:0}
+  .top-contact .wrap{padding:0 0 10px}
+  body{background:#fff;font-size:10px}
+  .wrap{width:100%}
+  .cv-id{padding:10px 0 14px;background:#fff;color:var(--ink)}
+  .cv-id .cv-role{color:var(--green)}
+  .cv-id .cv-tagline{color:#42506a}
+  .diff{border-bottom:1px solid var(--line)}
+  .diff-item{padding:10px 14px}
+  .cv-body{padding:14px 0 0;gap:22px;grid-template-columns:1fr 230px}
+  .cv-job{margin-bottom:12px}
+  .sec-title{margin-bottom:7px}
+  .cv-main section,.cv-side section{margin-bottom:14px}
+  .footer-note{display:none}
+  @page{size:A4;margin:12mm 11mm}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+<nav class="wrap nav">
+  <a class="brand" href="../portfolio/index.html">Mircéa Kellen</a>
+  <div class="nav-actions">
+    <a class="nav-btn" href="../portfolio/index.html"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg><span class="btn-label">Voltar ao Portfólio</span></a>
+    <button class="nav-btn primary" onclick="window.print()"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18h12v3H6zM6 14h12v-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/></svg><span class="btn-label">Baixar PDF</span></button>
+  </div>
+</nav>
+<div class="top-contact"><div class="wrap">
+  <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Recife, PE</span>
+  <a href="tel:+5581998693135"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 5-2 1.5a15 15 0 0 0 5.5 5.5l1.5-2 5 1.5v3A3.5 3.5 0 0 1 17.5 21C9.5 21 3 14.5 3 6.5A3.5 3.5 0 0 1 6.5 3Z"/></svg>(81) 99869-3135</a>
+  <a href="mailto:mirceakellen@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>mirceakellen@gmail.com</a>
+  <a href="https://www.linkedin.com/in/mirceamota/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a3 3 0 0 1 6 0v4M12 10v7"/></svg>linkedin.com/in/mirceamota</a>
+</div></div>
+</header>
+
+<section class="cv-id"><div class="wrap">
+  <h1>Mircéa Kellen C. Mota</h1>
+  <p class="cv-role">Liderança em Processos, Governança de TI e Transformação Digital</p>
+  <p class="cv-tagline">Vinte anos unindo infraestrutura, processos e produto para sustentar operações críticas em ambientes públicos, corporativos e multissetoriais.</p>
+</div></section>
+
+<section class="diff"><div class="wrap diff-grid">
+  <div class="diff-item"><strong>O que me diferencia</strong><span>Combino profundidade técnica com visão de negócio, unindo BPM, ITSM e Product Ownership em uma única trajetória.</span></div>
+  <div class="diff-item"><strong>Amplitude de atuação</strong><span>Já liderei desde infraestrutura crítica até governança estratégica, sempre com foco em padronização e continuidade.</span></div>
+  <div class="diff-item"><strong>Consultoria multissetorial</strong><span>Atuo como consultora independente em processos, validada em projetos de mineração, indústria e energia.</span></div>
+</div></section>
+
+<main class="wrap">
+  <div class="cv-body">
+    <div class="cv-main">
+
+      <section aria-labelledby="resumo-title">
+        <h2 class="sec-title" id="resumo-title">Resumo Executivo</h2>
+        <p class="cv-summary">Profissional com mais de vinte anos em Tecnologia da Informação, hoje à frente da governança de atendimento de um ecossistema de saúde digital com 11 mil usuários, 27 sistemas e 103 serviços. Construiu essa posição a partir de uma base sólida em infraestrutura, operações e Central de Serviços, evoluindo para análise de requisitos, engenharia reversa, Product Ownership e liderança nacional de operações de TI. Atua também como consultora independente em processos, conduzindo diagnósticos AS-IS, redesenhos TO-BE e identificação de oportunidades de automação para empresas de setores distintos. Sua trajetória une BPM, ITSM e gestão de produto em uma prática consistente de governança e melhoria contínua.</p>
+      </section>
+
+      <section aria-labelledby="exp-title">
+        <h2 class="sec-title" id="exp-title">Experiência Profissional</h2>
+
+        <article class="cv-job">
+          <div class="cv-job-top"><div><h3>Coordenadora de Suporte a Sistemas | Governança e Processos</h3><div class="cv-company">Secretaria de Saúde do Recife, Gerência Geral de Saúde Digital</div></div><span class="cv-period">desde junho de 2024</span></div>
+          <ul>
+            <li>Assumi a coordenação de um ecossistema de saúde digital com 11 mil usuários, 27 sistemas e 103 serviços, substituindo um modelo de suporte disperso por uma estrutura formal de governança.</li>
+            <li>Implantei a governança de serviços a partir do mapeamento AS-IS e TO-BE, criando papéis, fluxos, regras e catálogo antes inexistentes.</li>
+            <li>Centralizei o atendimento que antes acontecia pelo WhatsApp em um canal estruturado, com direcionamento automático e histórico auditável das interações.</li>
+            <li>Estruturei catálogo de serviços, SLAs e portfólio de sistemas em plataforma ITSM, trazendo clareza sobre responsabilidades que antes eram indefinidas.</li>
+            <li>Automatizei o ciclo de comunicação dos chamados, eliminando tarefas manuais de protocolo, confirmação e pesquisa de satisfação.</li>
+            <li>Atuo como Product Owner do ecossistema, conectando stakeholders, backlog e prioridades aos objetivos institucionais da Secretaria.</li>
+          </ul>
+        </article>
+
+        <article class="cv-job">
+          <div class="cv-job-top"><div><h3>Consultora em Processos e Transformação Digital</h3><div class="cv-company">Projetos multissetoriais: mineração, materiais elétricos e energia solar</div></div><span class="cv-period">janeiro de 2025 a junho de 2026</span></div>
+          <ul>
+            <li>Atuei como consultora independente em três setores distintos, conduzindo diagnósticos AS-IS e redesenhos TO-BE em processos comerciais e de pagamentos.</li>
+            <li>Mapeei o fluxo de pagamentos de uma mineradora e defini níveis de aprovação, controles internos e critérios de escalonamento, elevando a conformidade do processo.</li>
+            <li>Identifiquei, nesse mesmo diagnóstico, etapas candidatas à automação sob o modelo TO-RUN, priorizando iniciativas com maior potencial de eficiência.</li>
+            <li>Redesenhei o funil comercial de uma indústria de materiais elétricos, padronizando etapas e critérios de qualificação para reduzir retrabalho.</li>
+            <li>Desenvolvi o portal institucional de uma empresa de energia solar, unindo levantamento de requisitos comerciais à entrega técnica em HTML, CSS e JavaScript.</li>
+            <li>Conduzi cada projeto de ponta a ponta, da entrevista inicial com stakeholders à entrega final, combinando visão de negócio e execução técnica.</li>
+          </ul>
+        </article>
+
+        <article class="cv-job">
+          <div class="cv-job-top"><div><h3>Product Owner | Analista de Requisitos | Engenharia Reversa</h3><div class="cv-company">Secretaria de Saúde do Recife, Gerência Geral de Saúde Digital</div></div><span class="cv-period">maio de 2022 a junho de 2024</span></div>
+          <ul>
+            <li>Assumi decisões de evolução de sistemas de saúde digital sem documentação, unindo negócio e tecnologia em um contexto de alta complexidade.</li>
+            <li>Apliquei engenharia reversa funcional a sistemas legados, reconstruindo regras de negócio, fluxos e integrações a partir da análise de telas e dados.</li>
+            <li>Documentei o funcionamento AS-IS das soluções e defini requisitos TO-BE, eliminando decisões de evolução tomadas sem base documental.</li>
+            <li>Estruturei workflows, catálogo e portfólio de serviços na plataforma GLPI, aplicando ITIL, Scrum e Kanban a um ambiente antes sem padrão.</li>
+            <li>Gerenciei o backlog de produto, priorizando entregas por valor de negócio e viabilidade técnica junto às áreas solicitantes.</li>
+          </ul>
+        </article>
+
+        <article class="cv-job">
+          <div class="cv-job-top"><div><h3>Supervisora Nacional de Serviços de TI | Operações e ITSM</h3><div class="cv-company">Grupo Provider Soluções Tecnológicas</div></div><span class="cv-period">fevereiro de 2011 a fevereiro de 2012</span></div>
+          <ul>
+            <li>Assumi a liderança nacional das operações de atendimento de TI, supervisionando sete filiais sem um padrão comum de atendimento.</li>
+            <li>Padronizei processos entre as unidades, substituindo práticas isoladas por critérios únicos de priorização, escalonamento e qualidade.</li>
+            <li>Estruturei dashboards executivos e indicadores de desempenho, dando à liderança visibilidade que antes não existia sobre a operação nacional.</li>
+            <li>Desenvolvi os supervisores locais, alinhando práticas e acompanhamento de desempenho das equipes distribuídas geograficamente.</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section aria-labelledby="prev-title">
+        <h2 class="sec-title" id="prev-title">Experiências Anteriores</h2>
+        <div class="cv-early">
+          <div class="cv-early-row"><div><strong>Chefe da Seção de Informática</strong><span class="co">4º Batalhão de Polícia do Exército</span></div><span class="cv-period">abr/2014 a abr/2022</span></div>
+          <div class="cv-early-row"><div><strong>Coordenadora de Service Desk</strong><span class="co">Consultech Soluções em Tecnologia</span></div><span class="cv-period">dez/2012 a jun/2013</span></div>
+          <div class="cv-early-row"><div><strong>Analista de Processos | BPMN</strong><span class="co">Lanlink Informática</span></div><span class="cv-period">fev/2012 a dez/2012</span></div>
+          <div class="cv-early-row"><div><strong>Monitora da Central de Serviços</strong><span class="co">Grupo Provider Soluções Tecnológicas</span></div><span class="cv-period">dez/2007 a fev/2011</span></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="cv-side">
+      <section aria-labelledby="comp-title">
+        <h2 class="sec-title" id="comp-title">Competências</h2>
+        <div class="panel">
+          <div class="skill-group"><h4>Consultoria e Transformação de Processos</h4><p>AS-IS, TO-BE, TO-RUN, BPMN e gestão de mudanças aplicados a diagnósticos e redesenhos de processos de negócio.</p></div>
+          <div class="skill-group"><h4>Product Ownership e Business Analysis</h4><p>Backlog, priorização, discovery, levantamento de requisitos e engenharia reversa funcional.</p></div>
+          <div class="skill-group"><h4>Governança de Serviços de TI</h4><p>ITSM, ITIL, COBIT, catálogo de serviços, SLA e estruturação de Central de Serviços.</p></div>
+          <div class="skill-group"><h4>Liderança e Operações em Escala</h4><p>Gestão de equipes distribuídas, indicadores executivos e padronização de processos entre unidades.</p></div>
+          <p class="tools-line">GLPI · Power BI · Looker Studio · n8n · Rocket.Chat · Redmine · GitHub</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="form-title">
+        <h2 class="sec-title" id="form-title">Formação Acadêmica</h2>
+        <div class="panel"><ul class="cv-clean">
+          <li><strong>Bacharelado em Análise de Sistemas</strong><span>Universidade Salgado de Oliveira, 2005</span></li>
+        </ul></div>
+      </section>
+
+      <section aria-labelledby="pos-title">
+        <h2 class="sec-title" id="pos-title">Pós-graduação</h2>
+        <div class="panel"><ul class="cv-clean">
+          <li><strong>Business Intelligence &amp; Analytics</strong><span>UNIFG, 2022</span></li>
+        </ul></div>
+      </section>
+
+      <section aria-labelledby="cert-title">
+        <h2 class="sec-title" id="cert-title">Certificações</h2>
+        <div class="panel"><ul class="cv-clean">
+          <li><strong>ISO/IEC 27001:2022 Lead Implementer</strong><span>Segurança da Informação</span></li>
+          <li><strong>ITIL Foundation v3 e v2</strong><span>Gestão de Serviços de TI</span></li>
+          <li><strong>COBIT</strong><span>Governança de TI</span></li>
+        </ul></div>
+      </section>
+
+      <section aria-labelledby="idi-title">
+        <h2 class="sec-title" id="idi-title">Idiomas</h2>
+        <div class="panel"><ul class="cv-clean">
+          <li><strong>Inglês</strong><span>Leitura intermediária</span></li>
+          <li><strong>Espanhol</strong><span>Leitura intermediária</span></li>
+        </ul></div>
+      </section>
+
+    </div>
+  </div>
+
+  <p class="footer-note">Mircéa Kellen C. Mota, Processos, Governança, Product Owner e Gestão de Serviços de TI</p>
+</main>
+
+</body>
+</html>
