@@ -18,8 +18,8 @@ a{color:inherit}
 .wrap{width:min(1040px,calc(100% - 32px));margin:auto}
 
 /* top bar */
-.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
-.nav{height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.top{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--line)}
+.nav{height:60px;display:flex;align-items:center;justify-content:flex-end;gap:16px}
 .brand{font:700 1.02rem "Playfair Display",serif;text-decoration:none;color:var(--navy)}
 .nav-actions{display:flex;align-items:center;gap:10px}
 .nav-btn{display:inline-flex;align-items:center;gap:6px;font:600 .78rem "DM Sans",sans-serif;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 16px;color:var(--navy);background:#fff;cursor:pointer}
@@ -137,7 +137,6 @@ a{color:inherit}
 
 <header class="top">
 <nav class="wrap nav">
-  <a class="brand" href="../portfolio/index.html">Mircéa Kellen</a>
   <div class="nav-actions">
     <a class="nav-btn" href="../portfolio/index.html"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg><span class="btn-label">Voltar ao Portfólio</span></a>
     <button class="nav-btn primary" onclick="window.print()"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18h12v3H6zM6 14h12v-3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/></svg><span class="btn-label">Baixar PDF</span></button>
